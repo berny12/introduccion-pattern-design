@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.cibancode.patterndesign.lab4;
+package com.cibancode.patterndesign.lab5;
 
 import com.cibancode.patterndesign.lab4.supertype.TipoSonido;
 import com.cibancode.patterndesign.lab4.supertype.TipoVuelo;
@@ -12,12 +12,20 @@ import com.cibancode.patterndesign.lab4.supertype.TipoVuelo;
  */
 public abstract class Ave {
 
-		 TipoSonido tipoSonido;
-		 TipoVuelo tipoVuelo;
+		 private TipoSonido tipoSonido;
+		 private TipoVuelo tipoVuelo;
 		
 		//metodos de una ave
 		
 	
+
+		public void setTipoSonido(TipoSonido tipoSonido) {
+			this.tipoSonido = tipoSonido;
+		}
+
+		public void setTipoVuelo(TipoVuelo tipoVuelo) {
+			this.tipoVuelo = tipoVuelo;
+		}
 
 		public void realizaVuelo(){
 			tipoVuelo.vuelo();
