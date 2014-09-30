@@ -3,7 +3,7 @@
  */
 package com.cibancode.lab4;
 
-import static org.junit.Assert.*;
+
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,8 +28,10 @@ public class lab4TestCase {
 		Avestruz avestruz = new Avestruz();
 		Assert.assertNotNull(avestruz);
 		logger.debug("avestruz realizaVuelo");
+		System.out.println("avestruz realizaVuelo");
 		avestruz.realizaVuelo();
 		logger.debug("avestruz realizaSonido");
+		System.out.println("avestruz realizaSonido");
 		avestruz.realizaSonido();
 		
 	}
@@ -40,8 +42,10 @@ public class lab4TestCase {
 		Assert.assertNotNull(canario);
 		
 		logger.debug("canario realizaVuelo");
+		System.out.println("canario realizaVuelo");
 		canario.realizaVuelo();
 		logger.debug("canario realizaSonido");
+		System.out.println("canario realizaSonido");
 		canario.realizaSonido();
 		
 	}
@@ -52,8 +56,10 @@ public class lab4TestCase {
 		Assert.assertNotNull(gallina);
 		
 		logger.debug("gallina realizaVuelo");
+		System.out.println("gallina realizaVuelo");
 		gallina.realizaVuelo();
 		logger.debug("gallina realizaSonido");
+		System.out.println("gallina realizaSonido");
 		gallina.realizaSonido();
 		
 	}
